@@ -10,4 +10,4 @@ function pressBtn() {
 
 let a: number = 10;
 a = 12;
-console.log(a);
+
