@@ -2,12 +2,11 @@ function main(): void{
 
 }
 
-function pressBtn() { 
-    console.log('hello');
+function pressBtn(n:number):void { 
+    console.log('hello',n);
     
     
 }
 
-let a: number = 10;
-a = 12;
-
+let testNumber: number = 10;
+console.log(pressBtn(testNumber));
