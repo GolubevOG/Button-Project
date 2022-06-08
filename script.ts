@@ -1,11 +1,7 @@
 function main(): void{
-
 }
-
-function pressBtn() { 
-    console.log('hello');
-    
-    
+function pressBtn():void { 
+    console.log('hello');  
 }
 
 let a: number = 10;
