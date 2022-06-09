@@ -1,18 +1,32 @@
 body {
-  background-color: beige;
+  background-color: lightgreen;
 }
 
+h1 {
+  text-align: center;
+}
+.elemCenter {
+  height: 4 00px;
+  text-align: center;
+  position: relative;
+}
 .btn {
-  min-width: 200px;
-  font-family: inherit;
-  appearance: none;
-  border: 0;
-  border-radius: 15px;
-  background: #4676d7;
-  color: #fff;
-  padding: 8px 16px;
-  font-size: 2rem;
-  cursor: pointer;
+  background-color: lightcoral;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 60%;
+  /* margin: -50px 0 0 0; */
 }
 
 .btn:hover {
