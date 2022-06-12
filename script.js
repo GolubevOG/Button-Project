@@ -1,7 +1,7 @@
 function main() {
     console.clear();
     console.log('Yes');
-    var my_footer = document.querySelector('.footer');
+    var my_footer = document.querySelector('.data');
     console.log(my_footer);
     my_footer.textContent = 'Count: ' + String(testNumber);
     testNumber += 1;

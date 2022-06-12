@@ -19,9 +19,10 @@ div {
   grid-template-areas:
     "header header header"
     "left middle right"
+    "data data data"
     "footer footer footer";
   grid-template-columns: 15% 1fr 15%;
-  grid-template-rows: 20vh 80px 60vh;
+  grid-template-rows: 20vh 80px 40vh 20vh;
 }
 
 .left {
@@ -47,6 +48,14 @@ div {
 .header {
   grid-area: header;
 }
+
+.data {
+  grid-area: data;
+  text-align: center;
+  font-size: 50px;
+  color: blue;
+}
+
 .footer {
   grid-area: footer;
   text-align: center;
