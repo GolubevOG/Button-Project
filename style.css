@@ -5,35 +5,59 @@ body {
 h1 {
   text-align: center;
 }
-.elemCenter {
-  height: 4 00px;
-  text-align: center;
-  position: relative;
+
+div {
+  /* border: 1px solid black; */
 }
+
+.container {
+  display: grid;
+  /* background-color: greenyellow; */
+  /* border: 2px solid black; */
+  margin: 5px;
+  text-align: center;
+  grid-template-areas:
+    "header header header"
+    "left middle right"
+    "footer footer footer";
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-rows: 20vh 80px 60vh;
+}
+
+.left {
+  display: none;
+  grid-area: left;
+  margin: 5px;
+}
+
+.middle {
+  grid-area: middle;
+  margin: 5px;
+}
+
+.right {
+  display: none;
+  grid-area: right;
+}
+
 .btn {
-  background-color: lightcoral;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  display: inline-block;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 50%;
-
-  position: absolute;
-  top: 60%;
-  /* margin: -50px 0 0 0; */
+  margin: 10px;
 }
 
-.btn:hover {
-  background: #1d49aa;
+.header {
+  grid-area: header;
+}
+.footer {
+  grid-area: footer;
+  text-align: center;
+  font-size: 50px;
+  color: blue;
 }
 
-.btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #cbd6ee;
+.test_bg_red {
+  background-color: red;
+}
+
+.test_bg_green {
+  background-color: green;
 }

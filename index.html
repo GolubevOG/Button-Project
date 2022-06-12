@@ -7,14 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Push the Button</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="btn_style.css">
 </head>
 
 <body>
-    <div class="elemCenter">
-        <h1>Press the button</h1>
-        <input type="button" value="Press" class="btn" onclick="pressBtn()">
+    <!-- <h1>Press the button</h1> -->
+    <div class="container">
+        <div class="header">
+            <p>
+            <h1>Считаем количество нажатий на кнопку</h1>
+            </p>
+        </div>
+        <div class="left">
+            <p>left</p>
+        </div>
+        <div class="middle">
+            <button class="pushable btn" onclick="main()">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front">
+                    Push me
+                </span>
+            </button>
+        </div>
+        <div class="right">
+            <p>right</p>
+        </div>
+        <div class="footer">
+            <p>
+                Количество нажатий
+            </p>
+        </div>
     </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/4.7.3/typescript.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
