@@ -6,6 +6,11 @@ function main(): void{
     my_footer.textContent = 'Count: ' + String(testNumber);
     testNumber += 1;
     // my_footer.setAttribute(class, 'test_bg_green')
+    // localStorage.setItem('test', '1');
+    let testWord = localStorage.getItem('test');
+    localStorage.setItem('test', String(Number(testWord) + 1));
+    console.log(testWord);
+    
     
 }
 
